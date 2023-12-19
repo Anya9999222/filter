@@ -17,7 +17,7 @@ export const Portfolio = ({cards}) => {
       const onSelectedFilter = (tab) => {
         setTabCurrent(tab)
       }
-   let id = 0;
+ 
     return(
       
       <div className="main-content">
@@ -26,10 +26,8 @@ export const Portfolio = ({cards}) => {
           tabCurrent={tabCurrent} 
           filters = {filters} />
         <div className="container">
-          {cardsFiltered.map(item =>{
-            id += 1;
-            return(<ProjectList cards = {item} id = {id} />)
-          } )} 
+          {cardsFiltered.map(item =><ProjectList cards = {item} />
+           )} 
         </div>
     </div>
     );
