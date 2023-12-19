@@ -1,0 +1,14 @@
+.main-content {
+    width: 80vw;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.container {
+    width: 80vw;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 125px;
+    margin: 0 auto;
+};
